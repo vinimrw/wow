@@ -15,25 +15,8 @@
 
   /* Typography */
   --main-font-family: "Poppins", sans-serif;
-  /* --heading-font-size: 2rem; */
-  /* --body-font-size: 1rem; */
 
-  /* Spacing */
-  /* --padding-small: 8px; */
-  /* --padding-medium: 16px; */
-  /* --padding-large: 24px; */
-
-  /* Border */
   --border-radius: 4px;
-  /* --border-width: 1px; */
-
-  /* Shadows */
-  /* --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
-
-  /* Breakpoints */
-  --mobile-width: 480px;
-  --tablet-width: 768px;
-  --desktop-width: 1024px;
 
   /* Border */
   --border-main: 1px solid red;
@@ -135,29 +118,21 @@ body {
 }
 
 .links_side li.active {
-  position: relative; /* Set position to relative */
+  position: relative;
 }
 
 .links_side li.active::after {
-  content: ""; /* Add an empty content for the pseudo-element */
-  position: absolute; /* Set position to absolute */
-  left: 0; /* Align with the left edge of the li element */
-  top: 42px; /* Align with the bottom edge of the li element */
-  width: 100%; /* Take the full width of the li element */
-  height: 3px; /* Set the height to 3px for the underline */
-  background-color: var(--pink-color); /* Set the color of the underline */
-  /* Add 5px of space below the text */
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 42px;
+  width: 100%;
+  height: 3px;
+  background-color: var(--pink-color);
 }
 
 .margin_header-hero {
   margin-bottom: 84px;
-}
-
-/* test */
-
-.hero {
-  /* border: var(--border-third); */
-  /* margin-top: 84px; */
 }
 
 .hero_cont {
@@ -312,7 +287,7 @@ li {
   position: relative;
   width: 100%;
   height: 230px;
-  overflow: hidden; /* Ensure the dark overlay covers the entire container */
+  overflow: hidden;
 }
 
 .overlay::before {
@@ -322,13 +297,8 @@ li {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(
-    0,
-    0,
-    0,
-    0.8
-  ); /* Adjust the last value for opacity (0 to 1) */
-  z-index: 1; /* Place the overlay above the background image */
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1;
 }
 
 .container_banner {
@@ -457,13 +427,11 @@ footer {
 }
 
 .main_footer {
-  /* margin-top: 61px; */
   padding: 61px 33px 23px 24px;
 }
 
 .content_footer {
   margin: 35px 0 38px 0;
-  /* display: flex; */
 }
 
 .up,
@@ -646,7 +614,7 @@ footer {
   }
 
   .nav_links a.active {
-    position: relative; /* Set position to relative */
+    position: relative;
   }
 
   .nav_links a.active::after {
@@ -684,11 +652,8 @@ footer {
   .hero {
     width: 1062px;
     height: 583px;
-    /* margin-top: 111px; */
     position: relative;
     /* border: var(--border-main); */
-    /* margin-bottom: 72px; */
-    /* overflow: hidden; */
   }
 
   .hero_img > img {
@@ -697,7 +662,6 @@ footer {
   }
 
   .hero_cont {
-    /* border-radius: 0px 0px 0.4rem 0.4rem; */
     padding: 31px 0 40px 44px;
     position: absolute;
     bottom: 10px;
@@ -828,10 +792,8 @@ footer {
   }
 
   .up_coming > .p_righ {
-    /* text-align: flex-start; */
     width: 200px;
     align-items: start;
-    /* text-align: left; */
     top: 131px;
     left: 49px;
   }
@@ -936,26 +898,6 @@ footer {
     visibility: hidden;
   }
 
-  /* .n_img {
-    position: relative;
-  } */
-
-  /* .tag {
-    display: flex;
-    background-color: #f23131;
-    width: 71px;
-    height: 24px;
-    flex-shrink: 0;
-    font-size: 10px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.5px;
-  } */
-
   .splide_up2 li .tag {
     position: absolute;
     top: 13px;
@@ -982,18 +924,7 @@ footer {
     margin-bottom: 24px;
   }
 
-  /* .more_widith {
-    width: 1062px;
-    overflow: visible;
-  } */
-
-  /* #splide05-slide05 {
-    margin-right: 20px;
-    overflow: visible;
-  } */
-
   /* ================================ */
   /* ================================ */
   /* ================================ */
-  /* slide news */
 }
