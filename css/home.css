@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@800&family=Poppins&family=Roboto&family=Ubuntu&display=swap");
+
+:root {
+  /* Colors */
+  --primary-color: #030517;
+  --white-color: #fafafa;
+  --pink-color: #f231a5;
+  --green_dark-color: #35bdac;
+  --green-color: #3cd3c1;
+  --promo-color: #ff5f5f;
+  --dark-color: #000000;
+  --gray-color: #666666;
+
+  --animation-timing: 200ms ease-in-out;
+
+  /* Typography */
+  --main-font-family: "Poppins", sans-serif;
+  /* --heading-font-size: 2rem; */
+  /* --body-font-size: 1rem; */
+
+  /* Spacing */
+  /* --padding-small: 8px; */
+  /* --padding-medium: 16px; */
+  /* --padding-large: 24px; */
+
+  /* Border */
+  --border-radius: 4px;
+  /* --border-width: 1px; */
+
+  /* Shadows */
+  /* --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+
+  /* Breakpoints */
+  --mobile-width: 480px;
+  --tablet-width: 768px;
+  --desktop-width: 1024px;
+
+  /* Border */
+  --border-main: 1px solid red;
+  --border-secont: 1px solid green;
+  --border-third: 1px solid blue;
+}
+
+/* RESET */
+a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--main-font-family);
+  /* background-color: var(--primary-color); */
+  color: var(--white-color);
+  height: 100vh;
+}
+
+.main {
+  display: flex;
+  height: 100%;
+  /* flex: 1; */
+}
+
+.left,
+.right {
+  width: 50vw;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Ensure the dark overlay covers the entire container */
+  z-index: -10;
+}
+
+.overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(
+    3,
+    5,
+    23,
+    0.8
+  ); /* Adjust the last value for opacity (0 to 1) */
+  z-index: 1; /* Place the overlay above the background image */
+}
+
+.container_banner {
+  position: absolute;
+  background-image: url(/src/image\ home.png);
+  background-size: cover;
+  z-index: -10;
+  /* display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px; */
+}
+
+.logo {
+  margin: 56px 0 142px 55px;
+}
+
+.moto {
+  margin: 0 0 156px 55px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 62px;
+}
+
+.subtitle {
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 36px;
+}
+.subtitle b {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 36px;
+  color: #f231a5;
+}
+.footnote {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #ffffffcc;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.right {
+  padding: 120px 151px 0 151px;
+}
+.center {
+  display: flex;
+  flex-direction: column;
+  color: var(--dark-color);
+  width: 380px;
+}
+
+.logo_right {
+  margin-bottom: 67px;
+  text-align: center;
+}
+
+.signin {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin-bottom: 27px;
+}
+.green_bar {
+  background-color: var(--green_dark-color);
+  width: 7px;
+  height: 31px;
+}
+
+.signin .title {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 39px;
+  text-align: left;
+}
+
+.mail,
+.password {
+  width: 100%;
+  height: 50px;
+  background-color: #eaeaea;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding-left: 13px;
+}
+
+input {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.remenber {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: right;
+  color: #030517;
+  margin-bottom: 27px;
+  cursor: pointer;
+}
+
+.remenber:hover {
+  color: #f062c0;
+}
+.signinbtn {
+  width: 380px;
+  height: 50px;
+  border-radius: 4px;
+  background: linear-gradient(
+    178.59deg,
+    #ff5f5f -14.51%,
+    #f062c0 102.86%,
+    #f23131 102.86%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: var(--white-color);
+}
+.signinbtn:hover {
+  background: #f231a5;
+}
+
+.creatacc {
+  margin-top: 17px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  text-align: center;
+  color: var(--dark-color);
+}
+
+.creatacc b {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  color: var(--green-color);
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+
+.creatacc b:hover {
+  color: var(--green_dark-color);
+}
+
+@media screen and (max-width: 425px) {
+  .left {
+    display: none;
+  }
+
+  .right {
+    padding: 127px 24px 0 24px;
+  }
+}
