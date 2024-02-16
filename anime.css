@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@800&family=Poppins&family=Roboto&family=Ubuntu&display=swap");
+
+:root {
+  /* Colors */
+  --primary-color: #030517;
+  --white-color: #fafafa;
+  --pink-color: #f231a5;
+  --green_dark-color: #35bdac;
+  --green-color: #3cd3c1;
+  --promo-color: #ff5f5f;
+  --dark-color: #000000;
+  --gray-color: #666666;
+
+  --animation-timing: 200ms ease-in-out;
+
+  /* Typography */
+  --main-font-family: "Poppins", sans-serif;
+
+  --border-radius: 4px;
+
+  /* Border */
+  --border-main: 1px solid red;
+  --border-secont: 1px solid green;
+  --border-third: 1px solid blue;
+}
+
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--main-font-family);
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+nav {
+  position: relative;
+  display: flex;
+}
+
+nav a {
+  position: relative;
+  margin: 0 20px;
+  font-size: 2em;
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+nav #marker {
+  position: absolute;
+  left: 20px;
+  width: 95px;
+  height: 4px;
+  /* width: 0; */
+  background: var(--pink-color);
+  bottom: -8px;
+  transition: 0.5s;
+  border-radius: 4px;
+}
+
+/* ========================== */
+/* ========================== */
+/* ========================== */
+/* ========================== */
+.action {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+}
+
+.action .profile {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.action .profile img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.action .menu {
+  position: absolute;
+  top: 120px;
+  right: -10px;
+  padding: 10px 20px;
+  background: #fafafa;
+  width: 200px;
+  box-sizing: 0 5px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  transition: 0.5s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.action .menu.active {
+  top: 80px;
+  visibility: visible;
+  opacity: 1;
+}
+
+.action .menu::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: 28px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  transform: rotate(45deg);
+}
+.action .menu h3 {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  padding: 20px 0;
+  font-weight: 500;
+  font-size: 18px;
+  color: #555;
+  line-height: 1.2em;
+}
+
+.action .menu h3 span {
+  font-size: 14px;
+  color: #cecece;
+  font-weight: 400;
+}
+
+.action .menu ul li {
+  list-style: none;
+  padding: 10px 0;
+  /* border-top: 1px solid rgba(0, 0, 0, 0.5); */
+  display: flex;
+  align-items: center;
+}
+
+.action .menu ul li img {
+  max-width: 20px;
+  margin-right: 10px;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.action .menu ul li:hover img {
+  opacity: 1;
+}
+
+.action .menu ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.action .menu ul li a:hover {
+  color: var(--pink-color);
+}
+
+/* ================ */
+/* ================ */
+/* ================ */
+
+.container {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: #2e2f42;
+  position: relative;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.container.activo {
+  width: 360px;
+}
+
+.container .icon {
+  position: absolute;
+  right: -5px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 24px;
+}
+
+.container .icon .search {
+  font-size: 21px;
+  cursor: pointer;
+}
+
+/*  */
+.container .input {
+  position: relative;
+  width: 260px;
+  height: 40px;
+  left: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .input input {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 18px;
+  outline: none;
+  background: #2e2f42;
+  color: white;
+}
+
+.container .input .clear {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: -25px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  font-size: 20px;
+  color: var(--pink-color);
+  visibility: hidden;
+}
