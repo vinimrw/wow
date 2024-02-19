@@ -958,10 +958,14 @@ footer {
 
   /* ================ */
 
+  .action {
+    position: relative;
+  }
+
   .action .menu {
     position: absolute;
-    top: 120px;
-    right: 15px;
+    top: 40px;
+    right: -30px;
     padding: 10px 20px;
     background: #fafafa;
     width: 200px;
@@ -974,8 +978,8 @@ footer {
   }
 
   .action .menu.active {
-    top: 100px;
-    right: 15px;
+    top: 40px;
+    right: -30px;
     visibility: visible;
     opacity: 1;
     z-index: 10000;
@@ -1105,3 +1109,9 @@ footer {
     visibility: hidden;
   }
 }
+
+/* 
+search tirar do todo e tratar o input fild opacity
+
+dropdow - remover ao clicar fora
+*/

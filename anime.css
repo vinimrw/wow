@@ -237,5 +237,4 @@ nav #marker {
   cursor: pointer;
   font-size: 20px;
   color: var(--pink-color);
-  visibility: hidden;
 }
