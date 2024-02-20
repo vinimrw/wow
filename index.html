@@ -1035,6 +1035,10 @@
           document.querySelector(".containerS").classList.remove('activo');
         }
       }
+      var menu = document.querySelector(".menu");
+      if (!event.target.closest('.profile')) {
+        menu.classList.remove('active');
+      }
     }
 
     document.addEventListener("DOMContentLoaded", function () {
