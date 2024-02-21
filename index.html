@@ -191,9 +191,16 @@
               <ul class="splide__list">
                 <li class="splide__slide">
                   <div class="hero_img">
+                    <div class="c_img">
                     <img src="./src_title/desktop1.png"
                       srcset="https://placehold.co/400x480/green/white  400w, https://placehold.co/800x480/green/white 800w, ./src_title/desktop1.png"
                       alt="">
+                      <div class="hero_cont">
+                        <span class="h_title">Defy death</span>
+                        <span class="h_subtitle">Play the new <b>CrashLands</b> season</span>
+                        <a class="hero_btn" href="">Buy now</a>
+                      </div>
+                    </div>
                   </div>
                   <div class="tag tag_hero only_desktop">
 
@@ -206,51 +213,58 @@
                     </div>
                     <div class="main_tag">Bestselling</div>
                   </div>
-                  <div class="hero_cont">
-                    <span class="h_title">Defy death</span>
-                    <span class="h_subtitle">Play the new <b>CrashLands</b> season</span>
-                    <a class="hero_btn" href="">Buy now</a>
-                  </div>
                 </li>
 
                 <li class="splide__slide">
-                  <div class="hero_img"><img src="./src_title/d_cyberpunk_a16fc262ad_e977800821.webp"
+                  <div class="hero_img">
+                    <div class="c_img">
+                      <img src="./src_title/d_cyberpunk_a16fc262ad_e977800821.webp"
                       srcset="https://placehold.co/400x480/orange/white  400w, https://placehold.co/800x480/orange/white 800w, ./src_title/d_cyberpunk_a16fc262ad_e977800821.webp"
                       alt="">
+                      <div class="hero_cont">
+                        <span class="h_title">Cyberpunk 2077</span>
+                        <span class="h_subtitle">Enter the massive <b>Open World</b> of Night City, a place that sets new
+                          standards in
+                          terms
+                          of visuals, complexity and depth.</span>
+                        <a class="hero_btn" href="">Buy now</a>
+                      </div>
+                      </div>
                   </div>
-                  <div class="hero_cont">
-                    <span class="h_title">Cyberpunk 2077</span>
-                    <span class="h_subtitle">Enter the massive <b>Open World</b> of Night City, a place that sets new
-                      standards in
-                      terms
-                      of visuals, complexity and depth.</span>
-                    <a class="hero_btn" href="">Buy now</a>
-                  </div>
+                 
                 </li>
 
                 <li class="splide__slide">
-                  <div class="hero_img"><img src="./src_title/d_horizon_e9708de0cf_e8a0a07de3.webp"
+                  <div class="hero_img">
+                    <div class="c_img">
+                      <img src="./src_title/d_horizon_e9708de0cf_e8a0a07de3.webp"
                       srcset="https://placehold.co/400x480/red/white  400w, https://placehold.co/800x480/red/white 800w, ./src_title/d_horizon_e9708de0cf_e8a0a07de3.webp"
                       alt="">
+                      <div class="hero_cont">
+                        <span class="h_title">Horizon Zero Dawn</span>
+                        <span class="h_subtitle">Experience Aloy’s entire legendary quest to unravel the mysteries of a
+                          world ruled by deadly Machines.</span>
+                        <a class="hero_btn" href="">Buy now</a>
+                      </div>
+                    </div>
                   </div>
-                  <div class="hero_cont">
-                    <span class="h_title">Horizon Zero Dawn</span>
-                    <span class="h_subtitle">Experience Aloy’s entire legendary quest to unravel the mysteries of a
-                      world ruled by deadly Machines.</span>
-                    <a class="hero_btn" href="">Buy now</a>
-                  </div>
+                 
                 </li>
 
                 <li class="splide__slide">
-                  <div class="hero_img"><img src="./src_title/d_promo_ebec8e8a5b_73a5dcb51e.webp"
+                  <div class="hero_img">
+                    <div class="c_img">
+                      <img src="./src_title/d_promo_ebec8e8a5b_73a5dcb51e.webp"
                       srcset="https://placehold.co/400x480/blue/white  400w, https://placehold.co/800x480/blue/white 800w, ./src_title/d_promo_ebec8e8a5b_73a5dcb51e.webp"
                       alt="">
+                      <div class="hero_cont">
+                        <span class="h_title">Huge Promotion!!!</span>
+                        <span class="h_subtitle">Enjoy our best games with an amazing promo!</span>
+                        <a class="hero_btn" href="">Buy now</a>
+                      </div>
+                    </div>
                   </div>
-                  <div class="hero_cont">
-                    <span class="h_title">Huge Promotion!!!</span>
-                    <span class="h_subtitle">Enjoy our best games with an amazing promo!</span>
-                    <a class="hero_btn" href="">Buy now</a>
-                  </div>
+                  
                 </li>
               </ul>
 
@@ -1175,6 +1189,14 @@
     },
   }).mount();
 
+  // Add event listener for arrow key navigation
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'ArrowRight') {
+      splide.go('>');
+    } else if (e.key === 'ArrowLeft') {
+      splide.go('<');
+    }
+  });
 
 
 </script>

@@ -664,7 +664,7 @@ footer {
   .hero_cont {
     padding: 31px 0 40px 44px;
     position: absolute;
-    bottom: 10px;
+    bottom: 0;
     left: 0px;
     width: 1042px;
     background-color: rgba(0, 0, 0, 0.7);
@@ -1136,18 +1136,30 @@ footer {
     transition: 0.5s;
   } */
 
+  .c_img {
+    width: 1042px;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .c_img > img {
+    height: 100%;
+    object-fit: cover;
+  }
+
   .hero_img {
     transform: scale(1);
     transition: 0.5s;
+    height: 100%;
+  }
+
+  .hero_img > img {
+    height: 100%;
   }
 
   .hero_img:hover {
-    transform: scale(1.1);
+    transform: scale(1.01);
     transition: 0.5s;
-  }
-
-  .hero_cont:hover {
-    width: 100%;
   }
 
   @keyframes slideup {
@@ -1163,10 +1175,14 @@ footer {
     opacity: 0;
   }
 
-  .is-active > .hero_cont {
+  .is-active > .hero_img > .c_img > .hero_cont {
     opacity: 1;
     animation: slideup 2s ease 0s 1 normal both;
   }
+  /* .is-active > .hero_cont {
+    opacity: 1;
+    animation: slideup 2s ease 0s 1 normal both;
+  } */
 }
 
 /* 
